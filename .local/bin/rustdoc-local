@@ -1,0 +1,10 @@
+#!/bin/bash
+set -xe
+MYDIR=$PWD
+cargo doc
+cd ./target/doc
+python -m http.server --bind 127.0.0.1 8001 >/dev/null 2>&1 &
+cd ~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/share/doc/rust/html
+python -m http.server --bind 127.0.0.1 8000 >/dev/null 2>&1 &
+cd $MYDIR
+~/build/firefox-99b6/firefox -P firefox-99b6 --kiosk http://localhost:8000/std/index.html http://localhost:8001/settings.html >/dev/null 2>&1

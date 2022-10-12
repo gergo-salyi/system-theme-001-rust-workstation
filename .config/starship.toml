@@ -1,0 +1,17 @@
+format = """
+[┌ ](bold white)$directory
+[$character](bold green) """
+
+add_newline = false
+
+[character]
+format = "$symbol"
+success_symbol = "[└─>](bold green)"
+error_symbol = "[└─>](bold red)"
+vicmd_symbol = "[└<─](bold blue)"
+
+[directory]
+truncation_length = 10
+truncate_to_repo = false
+style = "bold blue"
+truncation_symbol = ".../"

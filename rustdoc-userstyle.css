@@ -1,0 +1,232 @@
+:root {
+    /* Theme rustdoc default */
+    /*
+    --w: #f0f0f0f;
+    --r: #f49052;
+    --g: #0cff00;
+    --b: #ad90fe;
+    --y: #ffba24;
+    --m: #ed8eae;
+    --c: #3cfff6;
+    */
+
+    /* Theme ashenone */
+    --w: #bcd9ee;
+    
+    --r: #f49052;
+    --g: #2ed368;
+    --b: #ad90fe;
+    --y: #d9d972;
+    --m: #ed8eae;
+    --c: #11b9ff;
+    
+    --grey: #B0B0B0;
+    
+    --code-block-background-color: transparent !important;
+    --sidebar-background-color: transparent !important;
+    --main-color: var(--w)
+}
+
+
+html {
+    background: url('data:image/gif;base64,R0lGODlhAQABAAD8/ywAAAAAAQABAAAIBAABBAQAOwo=');
+    scrollbar-width: none;
+}
+body {
+    background-color: #00000099;
+    color: var(--w);
+}
+.docs-rs-footer {
+    visibility: hidden;
+}
+
+
+div.nav-container {
+    background-color: transparent;
+    position: static;
+}
+div.nav-container * {
+    background-color: transparent !important;
+}
+div.nav-container ul.pure-menu-children {
+    background-color: #000000BB !important;
+}
+
+
+main {
+    padding-left: 22px;
+    padding-right: 10px;
+    color: var(--w);
+}
+div.docblock {
+    margin-left: 18px;
+}
+details.rustdoc-toggle > ::before {
+    left: -22px !important;
+}
+.code-header {
+    font-weight: 1000;
+}
+
+
+nav.sidebar {
+    background-color: transparent;
+    order: 99;
+    min-width: 180px;
+    width: 180px;
+    scrollbar-width: none;
+}
+.sidebar .location {
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+}
+.sidebar .current {
+    background-color: #FFFF0015;
+}
+
+
+.docblock code,
+.docblock-short code,
+.docblock pre {
+    /* code block background */
+    background-color: #00000000;
+}
+.docblock pre code {
+    background-color: transparent !important;
+}
+
+.docblock pre {
+    border-color:#88888844;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+input {
+    background-color: transparent !important;
+    color: var(--w) !important;
+}
+
+div.search-container * {
+    background-color: transparent !important;
+    color: var(--w) !important;
+}
+
+div.search-container a img {
+    filter: invert(90%);
+}
+
+.in-band {
+    background-color: transparent !important;
+}
+
+:target {
+    background-color: #FFFF0015;
+}
+
+.stab.portability {
+    background: transparent;
+    color: var(--m);
+}
+
+button {
+    background-color: transparent !important;
+}
+
+.sidebar a,
+a {
+    color: var(--y);
+}
+
+.line-numbers span {
+    color: var(--w);
+}
+
+.enum,
+.struct,
+.type,
+.foreigntype,
+.union,
+.primitive {
+    color: var(--c) !important;
+}
+
+.associatedtype,
+.constant,
+.static,
+.externcrate,
+.mod,
+.keyword {
+    color: var(--y) !important;
+}
+
+.attr,
+.derive,
+.macro {
+    color: var(--g) !important;
+}
+
+.trait,
+.traitalias {
+    color: var(--m) !important;
+}
+
+.fn,
+.method,
+.tymethod,
+.fnname {
+    color: var(--r) !important;
+}
+
+
+
+
+pre.rust .comment,
+pre.rust .doccomment {
+    color: var(--grey);
+}
+
+pre.rust .kw {
+    color: var(--m);
+}
+pre.rust .kw-2,
+pre.rust .prelude-ty {
+    color: var(--b);
+}
+pre.rust .number,
+pre.rust .string {
+    color: var(--g);
+}
+pre.rust .self,
+pre.rust .bool-val,
+pre.rust .prelude-val,
+pre.rust .attribute {
+    color: var(--r);
+}
+pre.rust .macro,
+pre.rust .macro-nonterminal {
+    color: var(--c);
+}
+pre.rust .lifetime {
+    color: var(--y);
+}
+pre.rust .question-mark {
+    color: var(--y);
+}
+
+
+.stab.unstable {
+ background: transparent;
+ border-color: var(--y);
+ border-width: 1px;
+ border-style: solid;
+ color: var(--y);
+}
+.stab.deprecated {
+ background:transparent;
+ border-color: var(--r);
+ border-width: 1px;
+ border-style: solid;
+ color: var(--r);
+}

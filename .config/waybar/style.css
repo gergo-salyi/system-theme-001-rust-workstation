@@ -1,0 +1,108 @@
+* {
+    border: none;
+    border-radius: 0;
+
+    font-family: "Cascadia Code", "Font Awesome 6 Free", "Font Awesome 6 Brands";
+
+	font-size: 10pt;
+    font-weight: 600;
+
+}
+
+window#waybar {
+    color: #dddddd;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+#workspaces button {
+    color: #dddddd;
+    padding: 0 5px;
+    /* Use box-shadow instead of border so the text isn't offset */
+    /* box-shadow: inset 0 -3px transparent; */
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+/*
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 -3px #ffffff;
+}
+*/
+#workspaces button:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+    color: #dddddd;
+    background: transparent;
+}
+
+#workspaces button.focused {
+    /* background-color: #64727D; */
+    color: #ff8888;
+    /* box-shadow: inset 0 -3px #ffffff; */
+}
+
+#workspaces button.urgent {
+    background-color: rgba(200, 0, 0, 0.65);
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#mpd {
+    padding: 0 10px;
+    margin: 0 4px;
+}
+
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+
+.modules-center {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+/*
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+*/
+
+#battery.critical:not(.charging) {
+    background-color: #f53c3c;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#language {
+    padding: 0 5px;
+    margin: 0 5px;
+    min-width: 16px;
+}
