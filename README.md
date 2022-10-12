@@ -1,4 +1,4 @@
-![Preview]()
+![Preview](https://github.com/gergo-salyi/system-theme-001-rust-workstation/blob/master/demo.mp4)
 
 ### System
 
@@ -14,11 +14,11 @@ This aims to be a daily drivable Rust programming setup with window transparency
 + **Rustdoc style**: custom css userstyle (colors, sidebar on the right)
 + **Wallpaper**: [mpvpaper](https://github.com/GhostNaN/mpvpaper) + video made with [ffmpeg frame interpolation](https://ffmpeg.org/ffmpeg-all.html#minterpolate)
 
-[Dotfiles]()
+[Dotfiles](https://github.com/gergo-salyi/system-theme-001-rust-workstation)
 
 ### Wallpaper
 
-+ Video [here](), loops from 3.000 s inital offset for 17.000 s duration
++ Video [here](https://mega.nz/file/04dUCCIA#_YugW77rsZW4U9J9OB9_C6o_xNi04GgDStfYoYpIibQ), loops from 3.000 s inital offset for 17.000 s duration
 + Run with mpvpaper:
 
 `mpvpaper -o "--ab-loop-a=3 --ab-loop-b=20" HDMI-A-1 ~/Videos/wallpaper-video.mp4`
@@ -31,8 +31,8 @@ This aims to be a daily drivable Rust programming setup with window transparency
 
 + Needs [Firefox 99b6](https://download-installer.cdn.mozilla.net/pub/firefox/releases/96.0b6/linux-x86_64/en-US/) or older (a version without [commit e0938f086f24](https://hg.mozilla.org/mozilla-central/rev/e0938f086f2401b9589f6b98c9a0ac30e67e487a))
 + Make a dedicated profile: firefox-99b6
-+ Install [Stylus](https://github.com/openstyles/stylus) exension and apply [this userstyle]() to URLs `*://localhost:8000/*` and `*://localhost:8001/*`
-+ Start local rustdoc servings and Firefox 99b6 with our profile in kiosk mode - from the rust project root dir run [this script]()
++ Install [Stylus](https://github.com/openstyles/stylus) exension and apply [this userstyle](https://github.com/gergo-salyi/system-theme-001-rust-workstation/blob/master/rustdoc-userstyle.css) to URLs `*://localhost:8000/*` and `*://localhost:8001/*`
++ Start local rustdoc servings and Firefox 99b6 with our profile in kiosk mode - from the rust project root dir run [this script](https://github.com/gergo-salyi/system-theme-001-rust-workstation/blob/master/.local/bin/rustdoc-local)
 + Then switch Firefox from kiosk fullscreen to a normal window with the wm's hotkey (eg. mod+f) 
 + Switch between the std doc tab and the crates doc tab with Crtl+Tab
 
