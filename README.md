@@ -1,4 +1,4 @@
-[![Preview](https://github.com/gergo-salyi/system-theme-001-rust-workstation/blob/master/demo.jpg)](https://github.com/gergo-salyi/system-theme-001-rust-workstation/blob/master/demo.mp4)
+https://user-images.githubusercontent.com/87373293/195375266-3b0c9f2b-ee42-4bd7-988f-7d633c474db1.mp4
 
 ### System
 
